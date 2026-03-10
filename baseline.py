@@ -3,7 +3,7 @@ import json
 import math
 import boto3
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List
 import logging
 
 s3 = boto3.client("s3")
@@ -67,7 +67,7 @@ class BaselineManager:
             print(f"Error saving baseline: {e}")
             raise
 
-    def update(self, baseline: dict, channel: str, new_values: list[float]) -> dict:
+    def update(self, baseline: dict, channel: str, new_values: List[float]) -> dict:
         """
         Welford's online algorithm for numerically stable mean and variance.
         Each channel tracks: count, mean, M2 (sum of squared deviations).

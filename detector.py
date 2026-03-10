@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 import logging
+from typing import List
 
 logger = logging.getLogger("anomaly_app")
 
@@ -32,7 +33,7 @@ class AnomalyDetector:
             print(f"Error computing z-scores: {e}")
             raise
 
-    def isolation_forest_flag(self, df: pd.DataFrame, numeric_cols: list[str]):
+    def isolation_forest_flag(self, df: pd.DataFrame, numeric_cols: List[str]):
         """
         Multivariate anomaly detection across all numeric channels simultaneously.
         IsolationForest returns -1 for anomalies, 1 for normal points.
@@ -68,7 +69,7 @@ class AnomalyDetector:
     def run(
         self,
         df: pd.DataFrame,
-        numeric_cols: list[str],
+        numeric_cols: List[str],
         baseline: dict,
         method: str = "both"
     ) -> pd.DataFrame:
