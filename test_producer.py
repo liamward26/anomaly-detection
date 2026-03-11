@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 import os
 
 s3 = boto3.client("s3")
-BUCKET_NAME = os.environ["BUCKET_NAME"]
+BUCKET_NAME = "ds5220-anomaly-liam-2026"
 
 
 def generate_batch(n_rows: int = 100, inject_anomalies: bool = True) -> pd.DataFrame:

@@ -1,0 +1,1219 @@
+2026-03-10 19:47:32,922 INFO anomaly_app Received SNS message type=SubscriptionConfirmation
+2026-03-10 19:47:33,068 INFO anomaly_app Confirmed SNS subscription
+2026-03-10 19:49:34,292 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 19:49:34,292 INFO anomaly_app Received new raw CSV file: raw/test.csv
+2026-03-10 19:49:34,293 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/test.csv
+2026-03-10 19:49:34,342 INFO anomaly_app Loaded 100 rows from raw/test.csv
+2026-03-10 19:49:34,386 INFO anomaly_app No baseline found yet at s3://ds5220-anomaly-liam-2026/state/baseline.json; starting fresh
+2026-03-10 19:49:34,387 INFO anomaly_app Updated baseline for channel=temperature count=100 mean=21.8114 std=1.3294
+2026-03-10 19:49:34,387 INFO anomaly_app Updated baseline for channel=humidity count=100 mean=54.9479 std=7.3654
+2026-03-10 19:49:34,388 INFO anomaly_app Updated baseline for channel=pressure count=100 mean=1013.5555 std=3.7135
+2026-03-10 19:49:34,388 INFO anomaly_app Updated baseline for channel=wind_speed count=100 mean=9.4816 std=3.7285
+2026-03-10 19:49:34,388 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 19:49:34,388 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 19:49:34,394 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 19:49:34,540 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 19:49:34,543 INFO anomaly_app Anomaly detection complete
+2026-03-10 19:49:34,544 INFO anomaly_app Anomaly scoring complete for raw/test.csv
+2026-03-10 19:49:34,577 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/test.csv
+2026-03-10 19:49:34,614 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:49:34,640 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 19:49:34,668 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/test_summary.json
+2026-03-10 19:49:34,668 INFO anomaly_app Done processing raw/test.csv: 6/100 anomalies flagged
+2026-03-10 19:53:05,768 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 19:53:05,768 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T195304.csv
+2026-03-10 19:53:05,770 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T195304.csv
+2026-03-10 19:53:05,827 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T195304.csv
+2026-03-10 19:53:05,891 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:53:05,892 INFO anomaly_app Updated baseline for channel=temperature count=200 mean=21.8688 std=1.4765
+2026-03-10 19:53:05,892 INFO anomaly_app Updated baseline for channel=humidity count=200 mean=55.4380 std=7.2835
+2026-03-10 19:53:05,892 INFO anomaly_app Updated baseline for channel=pressure count=200 mean=1013.2713 std=4.3279
+2026-03-10 19:53:05,893 INFO anomaly_app Updated baseline for channel=wind_speed count=200 mean=9.8038 std=3.1604
+2026-03-10 19:53:05,893 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 19:53:05,893 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 19:53:05,897 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 19:53:06,037 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 19:53:06,041 INFO anomaly_app Anomaly detection complete
+2026-03-10 19:53:06,041 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T195304.csv
+2026-03-10 19:53:06,075 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195304.csv
+2026-03-10 19:53:06,107 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:53:06,136 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 19:53:06,164 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195304_summary.json
+2026-03-10 19:53:06,165 INFO anomaly_app Done processing raw/sensors_20260310T195304.csv: 6/100 anomalies flagged
+2026-03-10 19:54:06,259 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 19:54:06,259 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T195405.csv
+2026-03-10 19:54:06,261 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T195405.csv
+2026-03-10 19:54:06,310 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T195405.csv
+2026-03-10 19:54:06,360 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:54:06,361 INFO anomaly_app Updated baseline for channel=temperature count=300 mean=21.8775 std=1.5678
+2026-03-10 19:54:06,361 INFO anomaly_app Updated baseline for channel=humidity count=300 mean=55.3396 std=7.7629
+2026-03-10 19:54:06,362 INFO anomaly_app Updated baseline for channel=pressure count=300 mean=1013.0829 std=4.0211
+2026-03-10 19:54:06,362 INFO anomaly_app Updated baseline for channel=wind_speed count=300 mean=9.8197 std=2.8908
+2026-03-10 19:54:06,362 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 19:54:06,362 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 19:54:06,366 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 19:54:06,507 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 19:54:06,511 INFO anomaly_app Anomaly detection complete
+2026-03-10 19:54:06,511 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T195405.csv
+2026-03-10 19:54:06,566 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195405.csv
+2026-03-10 19:54:06,592 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:54:06,644 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 19:54:06,673 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195405_summary.json
+2026-03-10 19:54:06,673 INFO anomaly_app Done processing raw/sensors_20260310T195405.csv: 7/100 anomalies flagged
+2026-03-10 19:55:06,828 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 19:55:06,828 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T195505.csv
+2026-03-10 19:55:06,830 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T195505.csv
+2026-03-10 19:55:06,890 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T195505.csv
+2026-03-10 19:55:06,940 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:55:06,941 INFO anomaly_app Updated baseline for channel=temperature count=400 mean=21.9231 std=1.7939
+2026-03-10 19:55:06,941 INFO anomaly_app Updated baseline for channel=humidity count=400 mean=55.2282 std=7.1776
+2026-03-10 19:55:06,941 INFO anomaly_app Updated baseline for channel=pressure count=400 mean=1013.0426 std=4.1254
+2026-03-10 19:55:06,942 INFO anomaly_app Updated baseline for channel=wind_speed count=400 mean=9.8129 std=2.9191
+2026-03-10 19:55:06,942 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 19:55:06,942 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 19:55:06,946 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 19:55:07,086 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 19:55:07,090 INFO anomaly_app Anomaly detection complete
+2026-03-10 19:55:07,090 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T195505.csv
+2026-03-10 19:55:07,127 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195505.csv
+2026-03-10 19:55:07,210 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:55:07,244 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 19:55:07,273 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195505_summary.json
+2026-03-10 19:55:07,273 INFO anomaly_app Done processing raw/sensors_20260310T195505.csv: 5/100 anomalies flagged
+2026-03-10 19:56:06,492 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 19:56:06,492 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T195605.csv
+2026-03-10 19:56:06,494 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T195605.csv
+2026-03-10 19:56:06,540 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T195605.csv
+2026-03-10 19:56:06,594 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:56:06,594 INFO anomaly_app Updated baseline for channel=temperature count=500 mean=22.0293 std=1.9546
+2026-03-10 19:56:06,595 INFO anomaly_app Updated baseline for channel=humidity count=500 mean=55.3151 std=7.1949
+2026-03-10 19:56:06,596 INFO anomaly_app Updated baseline for channel=pressure count=500 mean=1012.9139 std=3.9288
+2026-03-10 19:56:06,596 INFO anomaly_app Updated baseline for channel=wind_speed count=500 mean=9.8417 std=2.8961
+2026-03-10 19:56:06,596 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 19:56:06,596 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 19:56:06,601 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 19:56:06,742 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 19:56:06,746 INFO anomaly_app Anomaly detection complete
+2026-03-10 19:56:06,746 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T195605.csv
+2026-03-10 19:56:06,776 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195605.csv
+2026-03-10 19:56:06,802 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:56:06,859 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 19:56:06,888 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195605_summary.json
+2026-03-10 19:56:06,889 INFO anomaly_app Done processing raw/sensors_20260310T195605.csv: 6/100 anomalies flagged
+2026-03-10 19:58:06,937 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 19:58:06,938 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T195705.csv
+2026-03-10 19:58:06,939 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T195705.csv
+2026-03-10 19:58:06,991 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T195705.csv
+2026-03-10 19:58:07,033 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:58:07,034 INFO anomaly_app Updated baseline for channel=temperature count=600 mean=22.0775 std=2.0256
+2026-03-10 19:58:07,034 INFO anomaly_app Updated baseline for channel=humidity count=600 mean=55.3364 std=6.9058
+2026-03-10 19:58:07,035 INFO anomaly_app Updated baseline for channel=pressure count=600 mean=1012.9052 std=3.7687
+2026-03-10 19:58:07,035 INFO anomaly_app Updated baseline for channel=wind_speed count=600 mean=9.9419 std=3.2131
+2026-03-10 19:58:07,035 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 19:58:07,035 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 19:58:07,040 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 19:58:07,179 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 19:58:07,182 INFO anomaly_app Anomaly detection complete
+2026-03-10 19:58:07,183 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T195705.csv
+2026-03-10 19:58:07,217 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195705.csv
+2026-03-10 19:58:07,245 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:58:07,270 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 19:58:07,319 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195705_summary.json
+2026-03-10 19:58:07,319 INFO anomaly_app Done processing raw/sensors_20260310T195705.csv: 5/100 anomalies flagged
+2026-03-10 19:59:07,265 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 19:59:07,266 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T195906.csv
+2026-03-10 19:59:07,267 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T195906.csv
+2026-03-10 19:59:07,320 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T195906.csv
+2026-03-10 19:59:07,387 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:59:07,388 INFO anomaly_app Updated baseline for channel=temperature count=700 mean=22.0603 std=1.9684
+2026-03-10 19:59:07,388 INFO anomaly_app Updated baseline for channel=humidity count=700 mean=55.3312 std=6.6845
+2026-03-10 19:59:07,389 INFO anomaly_app Updated baseline for channel=pressure count=700 mean=1012.9415 std=3.8787
+2026-03-10 19:59:07,389 INFO anomaly_app Updated baseline for channel=wind_speed count=700 mean=9.9998 std=3.1815
+2026-03-10 19:59:07,389 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 19:59:07,389 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 19:59:07,394 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 19:59:07,534 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 19:59:07,538 INFO anomaly_app Anomaly detection complete
+2026-03-10 19:59:07,538 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T195906.csv
+2026-03-10 19:59:07,571 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195906.csv
+2026-03-10 19:59:07,601 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 19:59:07,631 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 19:59:07,661 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T195906_summary.json
+2026-03-10 19:59:07,661 INFO anomaly_app Done processing raw/sensors_20260310T195906.csv: 5/100 anomalies flagged
+2026-03-10 20:00:07,594 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:00:07,595 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200006.csv
+2026-03-10 20:00:07,596 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200006.csv
+2026-03-10 20:00:07,639 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200006.csv
+2026-03-10 20:00:07,722 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:00:07,723 INFO anomaly_app Updated baseline for channel=temperature count=800 mean=22.0859 std=1.9365
+2026-03-10 20:00:07,724 INFO anomaly_app Updated baseline for channel=humidity count=800 mean=55.1461 std=6.8817
+2026-03-10 20:00:07,724 INFO anomaly_app Updated baseline for channel=pressure count=800 mean=1012.9840 std=3.7911
+2026-03-10 20:00:07,725 INFO anomaly_app Updated baseline for channel=wind_speed count=800 mean=9.9292 std=3.1603
+2026-03-10 20:00:07,725 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:00:07,725 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:00:07,729 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:00:07,869 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:00:07,873 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:00:07,873 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200006.csv
+2026-03-10 20:00:07,909 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200006.csv
+2026-03-10 20:00:07,937 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:00:07,962 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:00:07,994 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200006_summary.json
+2026-03-10 20:00:07,994 INFO anomaly_app Done processing raw/sensors_20260310T200006.csv: 6/100 anomalies flagged
+2026-03-10 20:01:07,407 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:01:07,407 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200106.csv
+2026-03-10 20:01:07,409 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200106.csv
+2026-03-10 20:01:07,464 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200106.csv
+2026-03-10 20:01:07,524 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:01:07,525 INFO anomaly_app Updated baseline for channel=temperature count=900 mean=22.0425 std=1.8965
+2026-03-10 20:01:07,525 INFO anomaly_app Updated baseline for channel=humidity count=900 mean=55.1677 std=6.7037
+2026-03-10 20:01:07,525 INFO anomaly_app Updated baseline for channel=pressure count=900 mean=1012.9495 std=4.0008
+2026-03-10 20:01:07,526 INFO anomaly_app Updated baseline for channel=wind_speed count=900 mean=9.9129 std=3.1234
+2026-03-10 20:01:07,526 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:01:07,526 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:01:07,530 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:01:07,672 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:01:07,676 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:01:07,676 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200106.csv
+2026-03-10 20:01:07,710 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200106.csv
+2026-03-10 20:01:07,744 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:01:07,779 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:01:07,812 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200106_summary.json
+2026-03-10 20:01:07,812 INFO anomaly_app Done processing raw/sensors_20260310T200106.csv: 5/100 anomalies flagged
+2026-03-10 20:02:08,002 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:02:08,002 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200206.csv
+2026-03-10 20:02:08,004 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200206.csv
+2026-03-10 20:02:08,068 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200206.csv
+2026-03-10 20:02:08,130 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:02:08,131 INFO anomaly_app Updated baseline for channel=temperature count=1000 mean=22.0385 std=1.8654
+2026-03-10 20:02:08,131 INFO anomaly_app Updated baseline for channel=humidity count=1000 mean=55.1294 std=6.6121
+2026-03-10 20:02:08,132 INFO anomaly_app Updated baseline for channel=pressure count=1000 mean=1012.9485 std=4.1649
+2026-03-10 20:02:08,132 INFO anomaly_app Updated baseline for channel=wind_speed count=1000 mean=9.9325 std=3.1338
+2026-03-10 20:02:08,132 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:02:08,132 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:02:08,137 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:02:08,283 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:02:08,287 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:02:08,287 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200206.csv
+2026-03-10 20:02:08,330 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200206.csv
+2026-03-10 20:02:08,355 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:02:08,426 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:02:08,465 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200206_summary.json
+2026-03-10 20:02:08,465 INFO anomaly_app Done processing raw/sensors_20260310T200206.csv: 6/100 anomalies flagged
+2026-03-10 20:03:08,367 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:03:08,367 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200306.csv
+2026-03-10 20:03:08,369 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200306.csv
+2026-03-10 20:03:08,422 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200306.csv
+2026-03-10 20:03:08,521 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:03:08,522 INFO anomaly_app Updated baseline for channel=temperature count=1100 mean=22.0294 std=1.8842
+2026-03-10 20:03:08,522 INFO anomaly_app Updated baseline for channel=humidity count=1100 mean=55.1109 std=6.4475
+2026-03-10 20:03:08,523 INFO anomaly_app Updated baseline for channel=pressure count=1100 mean=1012.8909 std=4.1688
+2026-03-10 20:03:08,523 INFO anomaly_app Updated baseline for channel=wind_speed count=1100 mean=9.8857 std=3.1662
+2026-03-10 20:03:08,523 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:03:08,523 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:03:08,528 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:03:08,667 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:03:08,671 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:03:08,671 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200306.csv
+2026-03-10 20:03:08,705 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200306.csv
+2026-03-10 20:03:08,751 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:03:08,811 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:03:08,838 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200306_summary.json
+2026-03-10 20:03:08,838 INFO anomaly_app Done processing raw/sensors_20260310T200306.csv: 6/100 anomalies flagged
+2026-03-10 20:04:08,054 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:04:08,054 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200407.csv
+2026-03-10 20:04:08,056 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200407.csv
+2026-03-10 20:04:08,100 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200407.csv
+2026-03-10 20:04:08,144 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:04:08,145 INFO anomaly_app Updated baseline for channel=temperature count=1200 mean=22.0341 std=1.9185
+2026-03-10 20:04:08,145 INFO anomaly_app Updated baseline for channel=humidity count=1200 mean=55.2298 std=6.3524
+2026-03-10 20:04:08,146 INFO anomaly_app Updated baseline for channel=pressure count=1200 mean=1012.8424 std=4.1546
+2026-03-10 20:04:08,146 INFO anomaly_app Updated baseline for channel=wind_speed count=1200 mean=9.8923 std=3.1281
+2026-03-10 20:04:08,146 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:04:08,146 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:04:08,151 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:04:08,289 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:04:08,293 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:04:08,293 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200407.csv
+2026-03-10 20:04:08,325 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200407.csv
+2026-03-10 20:04:08,356 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:04:08,387 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:04:08,434 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200407_summary.json
+2026-03-10 20:04:08,434 INFO anomaly_app Done processing raw/sensors_20260310T200407.csv: 6/100 anomalies flagged
+2026-03-10 20:05:08,549 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:05:08,549 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200507.csv
+2026-03-10 20:05:08,551 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200507.csv
+2026-03-10 20:05:08,667 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200507.csv
+2026-03-10 20:05:08,710 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:05:08,711 INFO anomaly_app Updated baseline for channel=temperature count=1300 mean=22.0541 std=1.9456
+2026-03-10 20:05:08,712 INFO anomaly_app Updated baseline for channel=humidity count=1300 mean=55.2370 std=6.5490
+2026-03-10 20:05:08,712 INFO anomaly_app Updated baseline for channel=pressure count=1300 mean=1012.8027 std=4.0690
+2026-03-10 20:05:08,712 INFO anomaly_app Updated baseline for channel=wind_speed count=1300 mean=9.8986 std=3.0810
+2026-03-10 20:05:08,713 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:05:08,713 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:05:08,717 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:05:08,857 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:05:08,861 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:05:08,861 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200507.csv
+2026-03-10 20:05:08,938 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200507.csv
+2026-03-10 20:05:09,015 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:05:09,058 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:05:09,118 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200507_summary.json
+2026-03-10 20:05:09,118 INFO anomaly_app Done processing raw/sensors_20260310T200507.csv: 6/100 anomalies flagged
+2026-03-10 20:06:09,291 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:06:09,291 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200608.csv
+2026-03-10 20:06:09,293 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200608.csv
+2026-03-10 20:06:09,342 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200608.csv
+2026-03-10 20:06:09,392 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:06:09,393 INFO anomaly_app Updated baseline for channel=temperature count=1400 mean=22.0496 std=1.9274
+2026-03-10 20:06:09,394 INFO anomaly_app Updated baseline for channel=humidity count=1400 mean=55.2451 std=6.6302
+2026-03-10 20:06:09,394 INFO anomaly_app Updated baseline for channel=pressure count=1400 mean=1012.8231 std=4.0934
+2026-03-10 20:06:09,394 INFO anomaly_app Updated baseline for channel=wind_speed count=1400 mean=9.9308 std=3.0359
+2026-03-10 20:06:09,395 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:06:09,395 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:06:09,399 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:06:09,537 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:06:09,541 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:06:09,541 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200608.csv
+2026-03-10 20:06:09,574 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200608.csv
+2026-03-10 20:06:09,605 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:06:09,633 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:06:09,660 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200608_summary.json
+2026-03-10 20:06:09,661 INFO anomaly_app Done processing raw/sensors_20260310T200608.csv: 7/100 anomalies flagged
+2026-03-10 20:07:09,722 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:07:09,723 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200708.csv
+2026-03-10 20:07:09,724 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200708.csv
+2026-03-10 20:07:09,778 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200708.csv
+2026-03-10 20:07:09,974 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:07:09,975 INFO anomaly_app Updated baseline for channel=temperature count=1500 mean=22.0681 std=1.9057
+2026-03-10 20:07:09,975 INFO anomaly_app Updated baseline for channel=humidity count=1500 mean=55.2413 std=6.6695
+2026-03-10 20:07:09,976 INFO anomaly_app Updated baseline for channel=pressure count=1500 mean=1012.8430 std=4.0752
+2026-03-10 20:07:09,976 INFO anomaly_app Updated baseline for channel=wind_speed count=1500 mean=9.9113 std=3.0478
+2026-03-10 20:07:09,976 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:07:09,976 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:07:09,981 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:07:10,119 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:07:10,123 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:07:10,123 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200708.csv
+2026-03-10 20:07:10,155 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200708.csv
+2026-03-10 20:07:10,186 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:07:10,215 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:07:10,244 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200708_summary.json
+2026-03-10 20:07:10,244 INFO anomaly_app Done processing raw/sensors_20260310T200708.csv: 6/100 anomalies flagged
+2026-03-10 20:08:09,293 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:08:09,293 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200808.csv
+2026-03-10 20:08:09,294 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200808.csv
+2026-03-10 20:08:09,350 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200808.csv
+2026-03-10 20:08:09,446 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:08:09,447 INFO anomaly_app Updated baseline for channel=temperature count=1600 mean=22.0494 std=1.8888
+2026-03-10 20:08:09,448 INFO anomaly_app Updated baseline for channel=humidity count=1600 mean=55.2125 std=6.6969
+2026-03-10 20:08:09,448 INFO anomaly_app Updated baseline for channel=pressure count=1600 mean=1012.8552 std=4.0776
+2026-03-10 20:08:09,449 INFO anomaly_app Updated baseline for channel=wind_speed count=1600 mean=9.9083 std=3.0209
+2026-03-10 20:08:09,449 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:08:09,449 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:08:09,453 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:08:09,591 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:08:09,595 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:08:09,595 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200808.csv
+2026-03-10 20:08:09,626 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200808.csv
+2026-03-10 20:08:09,656 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:08:09,718 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:08:09,801 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200808_summary.json
+2026-03-10 20:08:09,801 INFO anomaly_app Done processing raw/sensors_20260310T200808.csv: 7/100 anomalies flagged
+2026-03-10 20:09:09,636 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:09:09,636 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T200908.csv
+2026-03-10 20:09:09,638 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T200908.csv
+2026-03-10 20:09:09,694 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T200908.csv
+2026-03-10 20:09:09,759 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:09:09,760 INFO anomaly_app Updated baseline for channel=temperature count=1700 mean=22.0395 std=1.8745
+2026-03-10 20:09:09,760 INFO anomaly_app Updated baseline for channel=humidity count=1700 mean=55.2231 std=6.7476
+2026-03-10 20:09:09,760 INFO anomaly_app Updated baseline for channel=pressure count=1700 mean=1012.8541 std=4.0449
+2026-03-10 20:09:09,761 INFO anomaly_app Updated baseline for channel=wind_speed count=1700 mean=9.8955 std=3.0399
+2026-03-10 20:09:09,761 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:09:09,761 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:09:09,766 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:09:09,906 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:09:09,909 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:09:09,910 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T200908.csv
+2026-03-10 20:09:09,978 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200908.csv
+2026-03-10 20:09:10,005 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:09:10,037 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:09:10,081 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T200908_summary.json
+2026-03-10 20:09:10,081 INFO anomaly_app Done processing raw/sensors_20260310T200908.csv: 5/100 anomalies flagged
+2026-03-10 20:10:10,131 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:10:10,131 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201008.csv
+2026-03-10 20:10:10,133 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201008.csv
+2026-03-10 20:10:10,181 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201008.csv
+2026-03-10 20:10:10,267 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:10:10,268 INFO anomaly_app Updated baseline for channel=temperature count=1800 mean=22.0240 std=1.8554
+2026-03-10 20:10:10,268 INFO anomaly_app Updated baseline for channel=humidity count=1800 mean=55.2246 std=6.6648
+2026-03-10 20:10:10,269 INFO anomaly_app Updated baseline for channel=pressure count=1800 mean=1012.8902 std=4.1893
+2026-03-10 20:10:10,269 INFO anomaly_app Updated baseline for channel=wind_speed count=1800 mean=9.8971 std=3.0123
+2026-03-10 20:10:10,269 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:10:10,269 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:10:10,274 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:10:10,413 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:10:10,417 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:10:10,417 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201008.csv
+2026-03-10 20:10:10,453 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201008.csv
+2026-03-10 20:10:10,480 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:10:10,512 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:10:10,547 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201008_summary.json
+2026-03-10 20:10:10,547 INFO anomaly_app Done processing raw/sensors_20260310T201008.csv: 5/100 anomalies flagged
+2026-03-10 20:11:10,656 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:11:10,656 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201109.csv
+2026-03-10 20:11:10,658 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201109.csv
+2026-03-10 20:11:10,702 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201109.csv
+2026-03-10 20:11:10,765 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:11:10,766 INFO anomaly_app Updated baseline for channel=temperature count=1900 mean=22.0356 std=1.9190
+2026-03-10 20:11:10,766 INFO anomaly_app Updated baseline for channel=humidity count=1900 mean=55.2520 std=6.5993
+2026-03-10 20:11:10,767 INFO anomaly_app Updated baseline for channel=pressure count=1900 mean=1012.8943 std=4.1411
+2026-03-10 20:11:10,767 INFO anomaly_app Updated baseline for channel=wind_speed count=1900 mean=9.8826 std=2.9798
+2026-03-10 20:11:10,767 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:11:10,768 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:11:10,772 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:11:10,913 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:11:10,917 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:11:10,917 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201109.csv
+2026-03-10 20:11:10,944 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201109.csv
+2026-03-10 20:11:10,977 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:11:11,081 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:11:11,109 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201109_summary.json
+2026-03-10 20:11:11,109 INFO anomaly_app Done processing raw/sensors_20260310T201109.csv: 6/100 anomalies flagged
+2026-03-10 20:12:10,573 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:12:10,573 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201209.csv
+2026-03-10 20:12:10,574 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201209.csv
+2026-03-10 20:12:10,636 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201209.csv
+2026-03-10 20:12:10,695 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:12:10,696 INFO anomaly_app Updated baseline for channel=temperature count=2000 mean=22.0329 std=1.8997
+2026-03-10 20:12:10,696 INFO anomaly_app Updated baseline for channel=humidity count=2000 mean=55.2534 std=6.6320
+2026-03-10 20:12:10,697 INFO anomaly_app Updated baseline for channel=pressure count=2000 mean=1012.8752 std=4.1461
+2026-03-10 20:12:10,697 INFO anomaly_app Updated baseline for channel=wind_speed count=2000 mean=9.8770 std=2.9681
+2026-03-10 20:12:10,697 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:12:10,697 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:12:10,702 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:12:10,842 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:12:10,846 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:12:10,846 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201209.csv
+2026-03-10 20:12:10,880 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201209.csv
+2026-03-10 20:12:10,911 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:12:10,948 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:12:10,979 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201209_summary.json
+2026-03-10 20:12:10,979 INFO anomaly_app Done processing raw/sensors_20260310T201209.csv: 5/100 anomalies flagged
+2026-03-10 20:13:10,753 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:13:10,753 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201309.csv
+2026-03-10 20:13:10,755 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201309.csv
+2026-03-10 20:13:10,820 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201309.csv
+2026-03-10 20:13:10,938 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:13:10,939 INFO anomaly_app Updated baseline for channel=temperature count=2100 mean=22.0388 std=1.9064
+2026-03-10 20:13:10,940 INFO anomaly_app Updated baseline for channel=humidity count=2100 mean=55.2184 std=6.5424
+2026-03-10 20:13:10,940 INFO anomaly_app Updated baseline for channel=pressure count=2100 mean=1012.8689 std=4.1313
+2026-03-10 20:13:10,941 INFO anomaly_app Updated baseline for channel=wind_speed count=2100 mean=9.8684 std=3.0420
+2026-03-10 20:13:10,941 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:13:10,941 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:13:10,945 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:13:11,085 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:13:11,089 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:13:11,089 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201309.csv
+2026-03-10 20:13:11,125 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201309.csv
+2026-03-10 20:13:11,154 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:13:11,190 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:13:11,223 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201309_summary.json
+2026-03-10 20:13:11,223 INFO anomaly_app Done processing raw/sensors_20260310T201309.csv: 6/100 anomalies flagged
+2026-03-10 20:14:10,541 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:14:10,542 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201409.csv
+2026-03-10 20:14:10,543 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201409.csv
+2026-03-10 20:14:10,603 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201409.csv
+2026-03-10 20:14:10,655 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:14:10,656 INFO anomaly_app Updated baseline for channel=temperature count=2200 mean=22.0238 std=1.9741
+2026-03-10 20:14:10,657 INFO anomaly_app Updated baseline for channel=humidity count=2200 mean=55.2410 std=6.4764
+2026-03-10 20:14:10,657 INFO anomaly_app Updated baseline for channel=pressure count=2200 mean=1012.8694 std=4.0926
+2026-03-10 20:14:10,658 INFO anomaly_app Updated baseline for channel=wind_speed count=2200 mean=9.8772 std=3.0259
+2026-03-10 20:14:10,658 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:14:10,658 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:14:10,662 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:14:10,812 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:14:10,816 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:14:10,816 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201409.csv
+2026-03-10 20:14:10,852 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201409.csv
+2026-03-10 20:14:10,905 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:14:10,941 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:14:10,992 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201409_summary.json
+2026-03-10 20:14:10,992 INFO anomaly_app Done processing raw/sensors_20260310T201409.csv: 6/100 anomalies flagged
+2026-03-10 20:15:11,166 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:15:11,166 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201509.csv
+2026-03-10 20:15:11,168 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201509.csv
+2026-03-10 20:15:11,216 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201509.csv
+2026-03-10 20:15:11,265 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:15:11,266 INFO anomaly_app Updated baseline for channel=temperature count=2300 mean=22.0340 std=2.0121
+2026-03-10 20:15:11,266 INFO anomaly_app Updated baseline for channel=humidity count=2300 mean=55.2332 std=6.4283
+2026-03-10 20:15:11,267 INFO anomaly_app Updated baseline for channel=pressure count=2300 mean=1012.8856 std=4.0544
+2026-03-10 20:15:11,267 INFO anomaly_app Updated baseline for channel=wind_speed count=2300 mean=9.8994 std=3.0214
+2026-03-10 20:15:11,267 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:15:11,268 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:15:11,272 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:15:11,410 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:15:11,414 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:15:11,414 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201509.csv
+2026-03-10 20:15:11,445 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201509.csv
+2026-03-10 20:15:11,473 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:15:11,506 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:15:11,534 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201509_summary.json
+2026-03-10 20:15:11,534 INFO anomaly_app Done processing raw/sensors_20260310T201509.csv: 6/100 anomalies flagged
+2026-03-10 20:16:10,668 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:16:10,668 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201610.csv
+2026-03-10 20:16:10,670 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201610.csv
+2026-03-10 20:16:10,719 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201610.csv
+2026-03-10 20:16:10,789 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:16:10,790 INFO anomaly_app Updated baseline for channel=temperature count=2400 mean=22.0287 std=1.9993
+2026-03-10 20:16:10,791 INFO anomaly_app Updated baseline for channel=humidity count=2400 mean=55.2499 std=6.4074
+2026-03-10 20:16:10,791 INFO anomaly_app Updated baseline for channel=pressure count=2400 mean=1012.8798 std=4.1249
+2026-03-10 20:16:10,792 INFO anomaly_app Updated baseline for channel=wind_speed count=2400 mean=9.8959 std=2.9997
+2026-03-10 20:16:10,792 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:16:10,792 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:16:10,797 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:16:10,936 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:16:10,939 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:16:10,940 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201610.csv
+2026-03-10 20:16:10,970 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201610.csv
+2026-03-10 20:16:10,996 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:16:11,028 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:16:11,064 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201610_summary.json
+2026-03-10 20:16:11,064 INFO anomaly_app Done processing raw/sensors_20260310T201610.csv: 5/100 anomalies flagged
+2026-03-10 20:17:11,350 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:17:11,350 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201710.csv
+2026-03-10 20:17:11,352 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201710.csv
+2026-03-10 20:17:11,469 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201710.csv
+2026-03-10 20:17:11,517 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:17:11,518 INFO anomaly_app Updated baseline for channel=temperature count=2500 mean=22.0287 std=1.9805
+2026-03-10 20:17:11,518 INFO anomaly_app Updated baseline for channel=humidity count=2500 mean=55.2390 std=6.4250
+2026-03-10 20:17:11,519 INFO anomaly_app Updated baseline for channel=pressure count=2500 mean=1012.8420 std=4.1854
+2026-03-10 20:17:11,519 INFO anomaly_app Updated baseline for channel=wind_speed count=2500 mean=9.8899 std=2.9982
+2026-03-10 20:17:11,520 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:17:11,520 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:17:11,524 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:17:11,671 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:17:11,675 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:17:11,675 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201710.csv
+2026-03-10 20:17:11,711 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201710.csv
+2026-03-10 20:17:11,741 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:17:11,772 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:17:11,803 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201710_summary.json
+2026-03-10 20:17:11,803 INFO anomaly_app Done processing raw/sensors_20260310T201710.csv: 6/100 anomalies flagged
+2026-03-10 20:18:11,792 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:18:11,792 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201810.csv
+2026-03-10 20:18:11,794 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201810.csv
+2026-03-10 20:18:11,845 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201810.csv
+2026-03-10 20:18:11,923 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:18:11,924 INFO anomaly_app Updated baseline for channel=temperature count=2600 mean=22.0273 std=1.9711
+2026-03-10 20:18:11,924 INFO anomaly_app Updated baseline for channel=humidity count=2600 mean=55.2427 std=6.3852
+2026-03-10 20:18:11,924 INFO anomaly_app Updated baseline for channel=pressure count=2600 mean=1012.8704 std=4.1653
+2026-03-10 20:18:11,925 INFO anomaly_app Updated baseline for channel=wind_speed count=2600 mean=9.8895 std=2.9932
+2026-03-10 20:18:11,925 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:18:11,925 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:18:11,929 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:18:12,066 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:18:12,070 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:18:12,070 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201810.csv
+2026-03-10 20:18:12,100 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201810.csv
+2026-03-10 20:18:12,132 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:18:12,166 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:18:12,195 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201810_summary.json
+2026-03-10 20:18:12,196 INFO anomaly_app Done processing raw/sensors_20260310T201810.csv: 5/100 anomalies flagged
+2026-03-10 20:19:11,436 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:19:11,437 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T201910.csv
+2026-03-10 20:19:11,438 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T201910.csv
+2026-03-10 20:19:11,500 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T201910.csv
+2026-03-10 20:19:11,557 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:19:11,558 INFO anomaly_app Updated baseline for channel=temperature count=2700 mean=22.0208 std=1.9678
+2026-03-10 20:19:11,559 INFO anomaly_app Updated baseline for channel=humidity count=2700 mean=55.1916 std=6.4201
+2026-03-10 20:19:11,559 INFO anomaly_app Updated baseline for channel=pressure count=2700 mean=1012.8701 std=4.1442
+2026-03-10 20:19:11,559 INFO anomaly_app Updated baseline for channel=wind_speed count=2700 mean=9.8753 std=2.9769
+2026-03-10 20:19:11,560 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:19:11,560 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:19:11,564 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:19:11,702 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:19:11,706 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:19:11,706 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T201910.csv
+2026-03-10 20:19:11,745 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201910.csv
+2026-03-10 20:19:11,783 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:19:11,848 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:19:11,887 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T201910_summary.json
+2026-03-10 20:19:11,887 INFO anomaly_app Done processing raw/sensors_20260310T201910.csv: 5/100 anomalies flagged
+2026-03-10 20:20:11,930 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:20:11,931 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202010.csv
+2026-03-10 20:20:11,932 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202010.csv
+2026-03-10 20:20:11,982 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202010.csv
+2026-03-10 20:20:12,028 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:20:12,029 INFO anomaly_app Updated baseline for channel=temperature count=2800 mean=22.0202 std=1.9638
+2026-03-10 20:20:12,030 INFO anomaly_app Updated baseline for channel=humidity count=2800 mean=55.1719 std=6.3621
+2026-03-10 20:20:12,030 INFO anomaly_app Updated baseline for channel=pressure count=2800 mean=1012.8493 std=4.1183
+2026-03-10 20:20:12,031 INFO anomaly_app Updated baseline for channel=wind_speed count=2800 mean=9.8905 std=3.0044
+2026-03-10 20:20:12,031 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:20:12,031 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:20:12,035 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:20:12,174 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:20:12,177 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:20:12,178 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202010.csv
+2026-03-10 20:20:12,206 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202010.csv
+2026-03-10 20:20:12,235 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:20:12,273 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:20:12,299 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202010_summary.json
+2026-03-10 20:20:12,299 INFO anomaly_app Done processing raw/sensors_20260310T202010.csv: 5/100 anomalies flagged
+2026-03-10 20:21:12,387 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:21:12,388 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202110.csv
+2026-03-10 20:21:12,391 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202110.csv
+2026-03-10 20:21:12,444 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202110.csv
+2026-03-10 20:21:12,492 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:21:12,493 INFO anomaly_app Updated baseline for channel=temperature count=2900 mean=22.0306 std=1.9759
+2026-03-10 20:21:12,494 INFO anomaly_app Updated baseline for channel=humidity count=2900 mean=55.1599 std=6.3596
+2026-03-10 20:21:12,494 INFO anomaly_app Updated baseline for channel=pressure count=2900 mean=1012.8337 std=4.0836
+2026-03-10 20:21:12,494 INFO anomaly_app Updated baseline for channel=wind_speed count=2900 mean=9.8812 std=3.0116
+2026-03-10 20:21:12,494 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:21:12,495 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:21:12,499 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:21:12,644 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:21:12,647 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:21:12,648 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202110.csv
+2026-03-10 20:21:12,683 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202110.csv
+2026-03-10 20:21:12,713 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:21:12,748 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:21:12,788 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202110_summary.json
+2026-03-10 20:21:12,788 INFO anomaly_app Done processing raw/sensors_20260310T202110.csv: 5/100 anomalies flagged
+2026-03-10 20:22:12,241 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:22:12,241 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202211.csv
+2026-03-10 20:22:12,243 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202211.csv
+2026-03-10 20:22:12,380 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202211.csv
+2026-03-10 20:22:12,439 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:22:12,440 INFO anomaly_app Updated baseline for channel=temperature count=3000 mean=22.0260 std=1.9691
+2026-03-10 20:22:12,441 INFO anomaly_app Updated baseline for channel=humidity count=3000 mean=55.1422 std=6.3691
+2026-03-10 20:22:12,441 INFO anomaly_app Updated baseline for channel=pressure count=3000 mean=1012.8152 std=4.1132
+2026-03-10 20:22:12,441 INFO anomaly_app Updated baseline for channel=wind_speed count=3000 mean=9.8897 std=2.9931
+2026-03-10 20:22:12,442 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:22:12,442 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:22:12,446 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:22:12,586 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:22:12,590 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:22:12,590 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202211.csv
+2026-03-10 20:22:12,624 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202211.csv
+2026-03-10 20:22:12,698 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:22:12,734 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:22:12,776 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202211_summary.json
+2026-03-10 20:22:12,776 INFO anomaly_app Done processing raw/sensors_20260310T202211.csv: 5/100 anomalies flagged
+2026-03-10 20:23:12,629 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:23:12,629 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202311.csv
+2026-03-10 20:23:12,631 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202311.csv
+2026-03-10 20:23:12,677 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202311.csv
+2026-03-10 20:23:12,731 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:23:12,732 INFO anomaly_app Updated baseline for channel=temperature count=3100 mean=22.0222 std=1.9609
+2026-03-10 20:23:12,733 INFO anomaly_app Updated baseline for channel=humidity count=3100 mean=55.1114 std=6.3360
+2026-03-10 20:23:12,733 INFO anomaly_app Updated baseline for channel=pressure count=3100 mean=1012.8111 std=4.1106
+2026-03-10 20:23:12,734 INFO anomaly_app Updated baseline for channel=wind_speed count=3100 mean=9.9068 std=3.0060
+2026-03-10 20:23:12,734 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:23:12,734 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:23:12,738 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:23:12,878 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:23:12,882 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:23:12,882 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202311.csv
+2026-03-10 20:23:12,912 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202311.csv
+2026-03-10 20:23:12,944 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:23:12,988 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:23:13,014 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202311_summary.json
+2026-03-10 20:23:13,015 INFO anomaly_app Done processing raw/sensors_20260310T202311.csv: 5/100 anomalies flagged
+2026-03-10 20:24:12,312 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:24:12,312 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202411.csv
+2026-03-10 20:24:12,314 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202411.csv
+2026-03-10 20:24:12,367 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202411.csv
+2026-03-10 20:24:12,412 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:24:12,413 INFO anomaly_app Updated baseline for channel=temperature count=3200 mean=22.0225 std=1.9449
+2026-03-10 20:24:12,413 INFO anomaly_app Updated baseline for channel=humidity count=3200 mean=55.1066 std=6.3281
+2026-03-10 20:24:12,414 INFO anomaly_app Updated baseline for channel=pressure count=3200 mean=1012.8068 std=4.0905
+2026-03-10 20:24:12,414 INFO anomaly_app Updated baseline for channel=wind_speed count=3200 mean=9.9242 std=3.0267
+2026-03-10 20:24:12,414 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:24:12,414 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:24:12,419 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:24:12,556 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:24:12,560 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:24:12,560 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202411.csv
+2026-03-10 20:24:12,593 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202411.csv
+2026-03-10 20:24:12,624 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:24:12,717 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:24:12,766 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202411_summary.json
+2026-03-10 20:24:12,766 INFO anomaly_app Done processing raw/sensors_20260310T202411.csv: 5/100 anomalies flagged
+2026-03-10 20:25:12,884 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:25:12,885 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202511.csv
+2026-03-10 20:25:12,886 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202511.csv
+2026-03-10 20:25:12,941 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202511.csv
+2026-03-10 20:25:12,995 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:25:12,996 INFO anomaly_app Updated baseline for channel=temperature count=3300 mean=22.0233 std=1.9344
+2026-03-10 20:25:12,997 INFO anomaly_app Updated baseline for channel=humidity count=3300 mean=55.0923 std=6.3430
+2026-03-10 20:25:12,997 INFO anomaly_app Updated baseline for channel=pressure count=3300 mean=1012.7914 std=4.1499
+2026-03-10 20:25:12,998 INFO anomaly_app Updated baseline for channel=wind_speed count=3300 mean=9.9221 std=3.0143
+2026-03-10 20:25:12,998 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:25:12,998 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:25:13,003 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:25:13,145 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:25:13,149 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:25:13,149 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202511.csv
+2026-03-10 20:25:13,182 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202511.csv
+2026-03-10 20:25:13,214 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:25:13,272 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:25:13,304 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202511_summary.json
+2026-03-10 20:25:13,304 INFO anomaly_app Done processing raw/sensors_20260310T202511.csv: 7/100 anomalies flagged
+2026-03-10 20:26:13,402 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:26:13,402 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202612.csv
+2026-03-10 20:26:13,403 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202612.csv
+2026-03-10 20:26:13,451 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202612.csv
+2026-03-10 20:26:13,505 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:26:13,505 INFO anomaly_app Updated baseline for channel=temperature count=3400 mean=22.0219 std=1.9608
+2026-03-10 20:26:13,506 INFO anomaly_app Updated baseline for channel=humidity count=3400 mean=55.1093 std=6.3158
+2026-03-10 20:26:13,506 INFO anomaly_app Updated baseline for channel=pressure count=3400 mean=1012.8068 std=4.1199
+2026-03-10 20:26:13,507 INFO anomaly_app Updated baseline for channel=wind_speed count=3400 mean=9.9409 std=3.0289
+2026-03-10 20:26:13,507 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:26:13,507 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:26:13,511 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:26:13,649 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:26:13,653 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:26:13,653 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202612.csv
+2026-03-10 20:26:13,684 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202612.csv
+2026-03-10 20:26:13,715 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:26:13,745 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:26:13,770 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202612_summary.json
+2026-03-10 20:26:13,770 INFO anomaly_app Done processing raw/sensors_20260310T202612.csv: 6/100 anomalies flagged
+2026-03-10 20:27:13,005 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:27:13,006 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202712.csv
+2026-03-10 20:27:13,007 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202712.csv
+2026-03-10 20:27:13,055 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202712.csv
+2026-03-10 20:27:13,179 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:27:13,180 INFO anomaly_app Updated baseline for channel=temperature count=3500 mean=22.0143 std=1.9495
+2026-03-10 20:27:13,180 INFO anomaly_app Updated baseline for channel=humidity count=3500 mean=55.1323 std=6.3709
+2026-03-10 20:27:13,181 INFO anomaly_app Updated baseline for channel=pressure count=3500 mean=1012.8064 std=4.1143
+2026-03-10 20:27:13,181 INFO anomaly_app Updated baseline for channel=wind_speed count=3500 mean=9.9472 std=3.0122
+2026-03-10 20:27:13,181 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:27:13,182 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:27:13,186 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:27:13,332 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:27:13,335 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:27:13,335 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202712.csv
+2026-03-10 20:27:13,392 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202712.csv
+2026-03-10 20:27:13,425 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:27:13,460 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:27:13,489 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202712_summary.json
+2026-03-10 20:27:13,489 INFO anomaly_app Done processing raw/sensors_20260310T202712.csv: 6/100 anomalies flagged
+2026-03-10 20:28:13,623 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:28:13,624 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202812.csv
+2026-03-10 20:28:13,625 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202812.csv
+2026-03-10 20:28:13,683 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202812.csv
+2026-03-10 20:28:13,730 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:28:13,731 INFO anomaly_app Updated baseline for channel=temperature count=3600 mean=22.0099 std=1.9499
+2026-03-10 20:28:13,732 INFO anomaly_app Updated baseline for channel=humidity count=3600 mean=55.1629 std=6.4300
+2026-03-10 20:28:13,732 INFO anomaly_app Updated baseline for channel=pressure count=3600 mean=1012.8113 std=4.0970
+2026-03-10 20:28:13,733 INFO anomaly_app Updated baseline for channel=wind_speed count=3600 mean=9.9446 std=3.0133
+2026-03-10 20:28:13,733 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:28:13,733 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:28:13,737 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:28:13,876 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:28:13,880 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:28:13,881 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202812.csv
+2026-03-10 20:28:13,916 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202812.csv
+2026-03-10 20:28:13,946 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:28:13,980 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:28:14,010 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202812_summary.json
+2026-03-10 20:28:14,010 INFO anomaly_app Done processing raw/sensors_20260310T202812.csv: 5/100 anomalies flagged
+2026-03-10 20:29:14,179 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:29:14,179 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T202912.csv
+2026-03-10 20:29:14,181 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T202912.csv
+2026-03-10 20:29:14,230 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T202912.csv
+2026-03-10 20:29:14,321 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:29:14,322 INFO anomaly_app Updated baseline for channel=temperature count=3700 mean=22.0006 std=1.9540
+2026-03-10 20:29:14,322 INFO anomaly_app Updated baseline for channel=humidity count=3700 mean=55.1519 std=6.4670
+2026-03-10 20:29:14,323 INFO anomaly_app Updated baseline for channel=pressure count=3700 mean=1012.8226 std=4.0678
+2026-03-10 20:29:14,323 INFO anomaly_app Updated baseline for channel=wind_speed count=3700 mean=9.9438 std=3.0212
+2026-03-10 20:29:14,323 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:29:14,323 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:29:14,328 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:29:14,467 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:29:14,470 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:29:14,471 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T202912.csv
+2026-03-10 20:29:14,499 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202912.csv
+2026-03-10 20:29:14,528 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:29:14,571 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:29:14,608 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T202912_summary.json
+2026-03-10 20:29:14,608 INFO anomaly_app Done processing raw/sensors_20260310T202912.csv: 5/100 anomalies flagged
+2026-03-10 20:30:13,808 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:30:13,808 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203012.csv
+2026-03-10 20:30:13,810 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203012.csv
+2026-03-10 20:30:13,875 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203012.csv
+2026-03-10 20:30:13,918 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:30:13,919 INFO anomaly_app Updated baseline for channel=temperature count=3800 mean=21.9902 std=1.9549
+2026-03-10 20:30:13,919 INFO anomaly_app Updated baseline for channel=humidity count=3800 mean=55.1262 std=6.4420
+2026-03-10 20:30:13,920 INFO anomaly_app Updated baseline for channel=pressure count=3800 mean=1012.8196 std=4.0957
+2026-03-10 20:30:13,920 INFO anomaly_app Updated baseline for channel=wind_speed count=3800 mean=9.9504 std=3.0134
+2026-03-10 20:30:13,920 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:30:13,920 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:30:13,925 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:30:14,063 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:30:14,067 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:30:14,067 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203012.csv
+2026-03-10 20:30:14,104 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203012.csv
+2026-03-10 20:30:14,132 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:30:14,182 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:30:14,219 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203012_summary.json
+2026-03-10 20:30:14,220 INFO anomaly_app Done processing raw/sensors_20260310T203012.csv: 5/100 anomalies flagged
+2026-03-10 20:31:14,176 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:31:14,176 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203113.csv
+2026-03-10 20:31:14,178 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203113.csv
+2026-03-10 20:31:14,230 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203113.csv
+2026-03-10 20:31:14,279 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:31:14,280 INFO anomaly_app Updated baseline for channel=temperature count=3900 mean=21.9971 std=1.9623
+2026-03-10 20:31:14,280 INFO anomaly_app Updated baseline for channel=humidity count=3900 mean=55.1408 std=6.4473
+2026-03-10 20:31:14,281 INFO anomaly_app Updated baseline for channel=pressure count=3900 mean=1012.8130 std=4.0710
+2026-03-10 20:31:14,281 INFO anomaly_app Updated baseline for channel=wind_speed count=3900 mean=9.9432 std=3.0173
+2026-03-10 20:31:14,281 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:31:14,281 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:31:14,286 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:31:14,425 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:31:14,429 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:31:14,429 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203113.csv
+2026-03-10 20:31:14,464 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203113.csv
+2026-03-10 20:31:14,494 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:31:14,560 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:31:14,630 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203113_summary.json
+2026-03-10 20:31:14,631 INFO anomaly_app Done processing raw/sensors_20260310T203113.csv: 6/100 anomalies flagged
+2026-03-10 20:32:14,587 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:32:14,588 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203213.csv
+2026-03-10 20:32:14,589 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203213.csv
+2026-03-10 20:32:14,641 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203213.csv
+2026-03-10 20:32:14,708 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:32:14,709 INFO anomaly_app Updated baseline for channel=temperature count=4000 mean=22.0004 std=1.9508
+2026-03-10 20:32:14,710 INFO anomaly_app Updated baseline for channel=humidity count=4000 mean=55.1562 std=6.4313
+2026-03-10 20:32:14,710 INFO anomaly_app Updated baseline for channel=pressure count=4000 mean=1012.8031 std=4.0745
+2026-03-10 20:32:14,710 INFO anomaly_app Updated baseline for channel=wind_speed count=4000 mean=9.9345 std=3.0211
+2026-03-10 20:32:14,710 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:32:14,711 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:32:14,715 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:32:14,853 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:32:14,857 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:32:14,857 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203213.csv
+2026-03-10 20:32:14,888 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203213.csv
+2026-03-10 20:32:14,918 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:32:14,976 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:32:15,012 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203213_summary.json
+2026-03-10 20:32:15,013 INFO anomaly_app Done processing raw/sensors_20260310T203213.csv: 5/100 anomalies flagged
+2026-03-10 20:33:14,440 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:33:14,440 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203313.csv
+2026-03-10 20:33:14,442 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203313.csv
+2026-03-10 20:33:14,496 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203313.csv
+2026-03-10 20:33:14,552 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:33:14,553 INFO anomaly_app Updated baseline for channel=temperature count=4100 mean=22.0024 std=1.9399
+2026-03-10 20:33:14,554 INFO anomaly_app Updated baseline for channel=humidity count=4100 mean=55.1565 std=6.4341
+2026-03-10 20:33:14,554 INFO anomaly_app Updated baseline for channel=pressure count=4100 mean=1012.8214 std=4.1129
+2026-03-10 20:33:14,555 INFO anomaly_app Updated baseline for channel=wind_speed count=4100 mean=9.9431 std=3.0071
+2026-03-10 20:33:14,555 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:33:14,555 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:33:14,560 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:33:14,706 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:33:14,709 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:33:14,709 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203313.csv
+2026-03-10 20:33:14,746 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203313.csv
+2026-03-10 20:33:14,774 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:33:14,805 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:33:14,841 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203313_summary.json
+2026-03-10 20:33:14,841 INFO anomaly_app Done processing raw/sensors_20260310T203313.csv: 7/100 anomalies flagged
+2026-03-10 20:34:14,998 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:34:14,999 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203413.csv
+2026-03-10 20:34:15,001 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203413.csv
+2026-03-10 20:34:15,049 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203413.csv
+2026-03-10 20:34:15,096 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:34:15,097 INFO anomaly_app Updated baseline for channel=temperature count=4200 mean=21.9989 std=1.9289
+2026-03-10 20:34:15,098 INFO anomaly_app Updated baseline for channel=humidity count=4200 mean=55.1550 std=6.4725
+2026-03-10 20:34:15,098 INFO anomaly_app Updated baseline for channel=pressure count=4200 mean=1012.8133 std=4.1095
+2026-03-10 20:34:15,099 INFO anomaly_app Updated baseline for channel=wind_speed count=4200 mean=9.9446 std=3.0025
+2026-03-10 20:34:15,099 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:34:15,099 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:34:15,103 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:34:15,242 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:34:15,246 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:34:15,246 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203413.csv
+2026-03-10 20:34:15,281 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203413.csv
+2026-03-10 20:34:15,309 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:34:15,348 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:34:15,377 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203413_summary.json
+2026-03-10 20:34:15,377 INFO anomaly_app Done processing raw/sensors_20260310T203413.csv: 6/100 anomalies flagged
+2026-03-10 20:35:14,770 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:35:14,770 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203513.csv
+2026-03-10 20:35:14,772 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203513.csv
+2026-03-10 20:35:14,831 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203513.csv
+2026-03-10 20:35:14,882 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:35:14,883 INFO anomaly_app Updated baseline for channel=temperature count=4300 mean=22.0018 std=1.9268
+2026-03-10 20:35:14,883 INFO anomaly_app Updated baseline for channel=humidity count=4300 mean=55.1672 std=6.4348
+2026-03-10 20:35:14,884 INFO anomaly_app Updated baseline for channel=pressure count=4300 mean=1012.8064 std=4.1324
+2026-03-10 20:35:14,884 INFO anomaly_app Updated baseline for channel=wind_speed count=4300 mean=9.9438 std=2.9992
+2026-03-10 20:35:14,884 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:35:14,884 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:35:14,888 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:35:15,027 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:35:15,030 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:35:15,031 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203513.csv
+2026-03-10 20:35:15,063 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203513.csv
+2026-03-10 20:35:15,093 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:35:15,123 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:35:15,150 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203513_summary.json
+2026-03-10 20:35:15,150 INFO anomaly_app Done processing raw/sensors_20260310T203513.csv: 5/100 anomalies flagged
+2026-03-10 20:36:15,235 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:36:15,235 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203613.csv
+2026-03-10 20:36:15,237 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203613.csv
+2026-03-10 20:36:15,287 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203613.csv
+2026-03-10 20:36:15,338 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:36:15,339 INFO anomaly_app Updated baseline for channel=temperature count=4400 mean=21.9974 std=1.9293
+2026-03-10 20:36:15,340 INFO anomaly_app Updated baseline for channel=humidity count=4400 mean=55.1501 std=6.4233
+2026-03-10 20:36:15,340 INFO anomaly_app Updated baseline for channel=pressure count=4400 mean=1012.8153 std=4.1424
+2026-03-10 20:36:15,340 INFO anomaly_app Updated baseline for channel=wind_speed count=4400 mean=9.9383 std=3.0026
+2026-03-10 20:36:15,340 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:36:15,341 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:36:15,345 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:36:15,483 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:36:15,486 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:36:15,486 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203613.csv
+2026-03-10 20:36:15,519 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203613.csv
+2026-03-10 20:36:15,545 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:36:15,617 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:36:15,646 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203613_summary.json
+2026-03-10 20:36:15,647 INFO anomaly_app Done processing raw/sensors_20260310T203613.csv: 5/100 anomalies flagged
+2026-03-10 20:37:15,502 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:37:15,502 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203714.csv
+2026-03-10 20:37:15,504 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203714.csv
+2026-03-10 20:37:15,558 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203714.csv
+2026-03-10 20:37:15,633 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:37:15,634 INFO anomaly_app Updated baseline for channel=temperature count=4500 mean=21.9904 std=1.9338
+2026-03-10 20:37:15,634 INFO anomaly_app Updated baseline for channel=humidity count=4500 mean=55.1533 std=6.4276
+2026-03-10 20:37:15,635 INFO anomaly_app Updated baseline for channel=pressure count=4500 mean=1012.8223 std=4.1238
+2026-03-10 20:37:15,635 INFO anomaly_app Updated baseline for channel=wind_speed count=4500 mean=9.9397 std=3.0020
+2026-03-10 20:37:15,635 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:37:15,635 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:37:15,640 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:37:15,779 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:37:15,782 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:37:15,782 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203714.csv
+2026-03-10 20:37:15,813 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203714.csv
+2026-03-10 20:37:15,842 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:37:15,905 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:37:15,940 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203714_summary.json
+2026-03-10 20:37:15,940 INFO anomaly_app Done processing raw/sensors_20260310T203714.csv: 5/100 anomalies flagged
+2026-03-10 20:38:15,150 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:38:15,150 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203814.csv
+2026-03-10 20:38:15,152 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203814.csv
+2026-03-10 20:38:15,212 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203814.csv
+2026-03-10 20:38:15,262 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:38:15,263 INFO anomaly_app Updated baseline for channel=temperature count=4600 mean=21.9931 std=1.9245
+2026-03-10 20:38:15,263 INFO anomaly_app Updated baseline for channel=humidity count=4600 mean=55.1662 std=6.3978
+2026-03-10 20:38:15,264 INFO anomaly_app Updated baseline for channel=pressure count=4600 mean=1012.8278 std=4.1056
+2026-03-10 20:38:15,264 INFO anomaly_app Updated baseline for channel=wind_speed count=4600 mean=9.9270 std=3.0816
+2026-03-10 20:38:15,264 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:38:15,264 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:38:15,269 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:38:15,408 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:38:15,411 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:38:15,412 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203814.csv
+2026-03-10 20:38:15,451 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203814.csv
+2026-03-10 20:38:15,475 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:38:15,513 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:38:15,549 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203814_summary.json
+2026-03-10 20:38:15,550 INFO anomaly_app Done processing raw/sensors_20260310T203814.csv: 7/100 anomalies flagged
+2026-03-10 20:39:15,795 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:39:15,795 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T203914.csv
+2026-03-10 20:39:15,798 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T203914.csv
+2026-03-10 20:39:15,845 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T203914.csv
+2026-03-10 20:39:15,903 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:39:15,904 INFO anomaly_app Updated baseline for channel=temperature count=4700 mean=21.9900 std=1.9239
+2026-03-10 20:39:15,904 INFO anomaly_app Updated baseline for channel=humidity count=4700 mean=55.1574 std=6.3794
+2026-03-10 20:39:15,905 INFO anomaly_app Updated baseline for channel=pressure count=4700 mean=1012.8385 std=4.0886
+2026-03-10 20:39:15,905 INFO anomaly_app Updated baseline for channel=wind_speed count=4700 mean=9.9323 std=3.0873
+2026-03-10 20:39:15,905 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:39:15,905 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:39:15,910 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:39:16,048 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:39:16,051 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:39:16,052 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T203914.csv
+2026-03-10 20:39:16,085 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203914.csv
+2026-03-10 20:39:16,110 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:39:16,137 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:39:16,164 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T203914_summary.json
+2026-03-10 20:39:16,164 INFO anomaly_app Done processing raw/sensors_20260310T203914.csv: 6/100 anomalies flagged
+2026-03-10 20:40:15,504 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:40:15,505 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204014.csv
+2026-03-10 20:40:15,506 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204014.csv
+2026-03-10 20:40:15,561 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204014.csv
+2026-03-10 20:40:15,613 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:40:15,614 INFO anomaly_app Updated baseline for channel=temperature count=4800 mean=21.9903 std=1.9205
+2026-03-10 20:40:15,615 INFO anomaly_app Updated baseline for channel=humidity count=4800 mean=55.1721 std=6.4260
+2026-03-10 20:40:15,615 INFO anomaly_app Updated baseline for channel=pressure count=4800 mean=1012.8492 std=4.0679
+2026-03-10 20:40:15,616 INFO anomaly_app Updated baseline for channel=wind_speed count=4800 mean=9.9300 std=3.0778
+2026-03-10 20:40:15,616 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:40:15,616 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:40:15,621 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:40:15,759 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:40:15,762 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:40:15,762 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204014.csv
+2026-03-10 20:40:15,796 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204014.csv
+2026-03-10 20:40:15,826 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:40:15,861 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:40:15,890 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204014_summary.json
+2026-03-10 20:40:15,890 INFO anomaly_app Done processing raw/sensors_20260310T204014.csv: 5/100 anomalies flagged
+2026-03-10 20:41:15,980 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:41:15,980 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204114.csv
+2026-03-10 20:41:15,982 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204114.csv
+2026-03-10 20:41:16,034 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204114.csv
+2026-03-10 20:41:16,085 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:41:16,086 INFO anomaly_app Updated baseline for channel=temperature count=4900 mean=21.9878 std=1.9154
+2026-03-10 20:41:16,087 INFO anomaly_app Updated baseline for channel=humidity count=4900 mean=55.1831 std=6.4220
+2026-03-10 20:41:16,087 INFO anomaly_app Updated baseline for channel=pressure count=4900 mean=1012.8475 std=4.0730
+2026-03-10 20:41:16,088 INFO anomaly_app Updated baseline for channel=wind_speed count=4900 mean=9.9228 std=3.0792
+2026-03-10 20:41:16,088 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:41:16,088 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:41:16,092 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:41:16,230 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:41:16,233 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:41:16,233 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204114.csv
+2026-03-10 20:41:16,269 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204114.csv
+2026-03-10 20:41:16,301 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:41:16,335 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:41:16,364 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204114_summary.json
+2026-03-10 20:41:16,364 INFO anomaly_app Done processing raw/sensors_20260310T204114.csv: 5/100 anomalies flagged
+2026-03-10 20:42:16,332 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:42:16,332 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204215.csv
+2026-03-10 20:42:16,334 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204215.csv
+2026-03-10 20:42:16,385 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204215.csv
+2026-03-10 20:42:16,458 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:42:16,459 INFO anomaly_app Updated baseline for channel=temperature count=5000 mean=21.9854 std=1.9226
+2026-03-10 20:42:16,459 INFO anomaly_app Updated baseline for channel=humidity count=5000 mean=55.1715 std=6.4808
+2026-03-10 20:42:16,460 INFO anomaly_app Updated baseline for channel=pressure count=5000 mean=1012.8519 std=4.0531
+2026-03-10 20:42:16,460 INFO anomaly_app Updated baseline for channel=wind_speed count=5000 mean=9.9257 std=3.0690
+2026-03-10 20:42:16,460 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:42:16,460 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:42:16,465 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:42:16,604 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:42:16,607 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:42:16,607 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204215.csv
+2026-03-10 20:42:16,641 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204215.csv
+2026-03-10 20:42:16,688 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:42:16,738 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:42:16,766 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204215_summary.json
+2026-03-10 20:42:16,766 INFO anomaly_app Done processing raw/sensors_20260310T204215.csv: 7/100 anomalies flagged
+2026-03-10 20:43:15,993 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:43:15,993 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204315.csv
+2026-03-10 20:43:15,995 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204315.csv
+2026-03-10 20:43:16,060 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204315.csv
+2026-03-10 20:43:16,107 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:43:16,108 INFO anomaly_app Updated baseline for channel=temperature count=5100 mean=21.9836 std=1.9155
+2026-03-10 20:43:16,108 INFO anomaly_app Updated baseline for channel=humidity count=5100 mean=55.1706 std=6.4738
+2026-03-10 20:43:16,108 INFO anomaly_app Updated baseline for channel=pressure count=5100 mean=1012.8561 std=4.0617
+2026-03-10 20:43:16,109 INFO anomaly_app Updated baseline for channel=wind_speed count=5100 mean=9.9438 std=3.0764
+2026-03-10 20:43:16,109 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:43:16,109 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:43:16,114 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:43:16,252 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:43:16,255 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:43:16,256 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204315.csv
+2026-03-10 20:43:16,331 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204315.csv
+2026-03-10 20:43:16,359 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:43:16,405 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:43:16,460 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204315_summary.json
+2026-03-10 20:43:16,460 INFO anomaly_app Done processing raw/sensors_20260310T204315.csv: 5/100 anomalies flagged
+2026-03-10 20:44:16,562 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:44:16,563 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204415.csv
+2026-03-10 20:44:16,565 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204415.csv
+2026-03-10 20:44:16,614 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204415.csv
+2026-03-10 20:44:16,659 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:44:16,660 INFO anomaly_app Updated baseline for channel=temperature count=5200 mean=21.9831 std=1.9073
+2026-03-10 20:44:16,661 INFO anomaly_app Updated baseline for channel=humidity count=5200 mean=55.1637 std=6.4896
+2026-03-10 20:44:16,661 INFO anomaly_app Updated baseline for channel=pressure count=5200 mean=1012.8557 std=4.0444
+2026-03-10 20:44:16,661 INFO anomaly_app Updated baseline for channel=wind_speed count=5200 mean=9.9531 std=3.1034
+2026-03-10 20:44:16,662 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:44:16,662 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:44:16,667 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:44:16,807 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:44:16,810 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:44:16,810 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204415.csv
+2026-03-10 20:44:16,891 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204415.csv
+2026-03-10 20:44:16,922 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:44:17,039 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:44:17,070 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204415_summary.json
+2026-03-10 20:44:17,070 INFO anomaly_app Done processing raw/sensors_20260310T204415.csv: 5/100 anomalies flagged
+2026-03-10 20:45:16,883 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:45:16,884 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204515.csv
+2026-03-10 20:45:16,885 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204515.csv
+2026-03-10 20:45:16,938 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204515.csv
+2026-03-10 20:45:16,983 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:45:16,984 INFO anomaly_app Updated baseline for channel=temperature count=5300 mean=21.9816 std=1.8993
+2026-03-10 20:45:16,984 INFO anomaly_app Updated baseline for channel=humidity count=5300 mean=55.1590 std=6.4613
+2026-03-10 20:45:16,985 INFO anomaly_app Updated baseline for channel=pressure count=5300 mean=1012.8644 std=4.0489
+2026-03-10 20:45:16,985 INFO anomaly_app Updated baseline for channel=wind_speed count=5300 mean=9.9565 std=3.1229
+2026-03-10 20:45:16,985 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:45:16,985 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:45:16,989 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:45:17,129 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:45:17,133 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:45:17,133 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204515.csv
+2026-03-10 20:45:17,163 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204515.csv
+2026-03-10 20:45:17,187 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:45:17,248 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:45:17,286 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204515_summary.json
+2026-03-10 20:45:17,286 INFO anomaly_app Done processing raw/sensors_20260310T204515.csv: 6/100 anomalies flagged
+2026-03-10 20:46:16,725 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:46:16,725 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204615.csv
+2026-03-10 20:46:16,727 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204615.csv
+2026-03-10 20:46:16,786 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204615.csv
+2026-03-10 20:46:16,853 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:46:16,853 INFO anomaly_app Updated baseline for channel=temperature count=5400 mean=21.9869 std=1.8919
+2026-03-10 20:46:16,854 INFO anomaly_app Updated baseline for channel=humidity count=5400 mean=55.1487 std=6.4402
+2026-03-10 20:46:16,854 INFO anomaly_app Updated baseline for channel=pressure count=5400 mean=1012.8703 std=4.0304
+2026-03-10 20:46:16,855 INFO anomaly_app Updated baseline for channel=wind_speed count=5400 mean=9.9480 std=3.1846
+2026-03-10 20:46:16,855 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:46:16,855 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:46:16,859 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:46:16,998 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:46:17,002 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:46:17,002 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204615.csv
+2026-03-10 20:46:17,084 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204615.csv
+2026-03-10 20:46:17,111 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:46:17,179 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:46:17,209 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204615_summary.json
+2026-03-10 20:46:17,209 INFO anomaly_app Done processing raw/sensors_20260310T204615.csv: 6/100 anomalies flagged
+2026-03-10 20:47:17,010 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:47:17,010 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204715.csv
+2026-03-10 20:47:17,012 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204715.csv
+2026-03-10 20:47:17,076 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204715.csv
+2026-03-10 20:47:17,148 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:47:17,149 INFO anomaly_app Updated baseline for channel=temperature count=5500 mean=21.9815 std=1.8830
+2026-03-10 20:47:17,150 INFO anomaly_app Updated baseline for channel=humidity count=5500 mean=55.1291 std=6.4500
+2026-03-10 20:47:17,150 INFO anomaly_app Updated baseline for channel=pressure count=5500 mean=1012.8761 std=4.0472
+2026-03-10 20:47:17,151 INFO anomaly_app Updated baseline for channel=wind_speed count=5500 mean=9.9450 std=3.1699
+2026-03-10 20:47:17,151 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:47:17,151 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:47:17,155 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:47:17,295 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:47:17,298 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:47:17,299 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204715.csv
+2026-03-10 20:47:17,347 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204715.csv
+2026-03-10 20:47:17,386 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:47:17,456 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:47:17,486 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204715_summary.json
+2026-03-10 20:47:17,486 INFO anomaly_app Done processing raw/sensors_20260310T204715.csv: 6/100 anomalies flagged
+2026-03-10 20:48:17,481 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:48:17,481 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204816.csv
+2026-03-10 20:48:17,483 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204816.csv
+2026-03-10 20:48:17,532 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204816.csv
+2026-03-10 20:48:17,578 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:48:17,579 INFO anomaly_app Updated baseline for channel=temperature count=5600 mean=21.9773 std=1.8773
+2026-03-10 20:48:17,579 INFO anomaly_app Updated baseline for channel=humidity count=5600 mean=55.1070 std=6.4767
+2026-03-10 20:48:17,580 INFO anomaly_app Updated baseline for channel=pressure count=5600 mean=1012.8596 std=4.0323
+2026-03-10 20:48:17,580 INFO anomaly_app Updated baseline for channel=wind_speed count=5600 mean=9.9419 std=3.1809
+2026-03-10 20:48:17,580 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:48:17,581 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:48:17,585 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:48:17,724 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:48:17,728 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:48:17,728 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204816.csv
+2026-03-10 20:48:17,766 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204816.csv
+2026-03-10 20:48:17,792 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:48:17,824 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:48:17,861 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204816_summary.json
+2026-03-10 20:48:17,862 INFO anomaly_app Done processing raw/sensors_20260310T204816.csv: 5/100 anomalies flagged
+2026-03-10 20:49:17,323 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:49:17,323 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T204916.csv
+2026-03-10 20:49:17,325 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T204916.csv
+2026-03-10 20:49:17,371 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T204916.csv
+2026-03-10 20:49:17,413 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:49:17,414 INFO anomaly_app Updated baseline for channel=temperature count=5700 mean=21.9815 std=1.8770
+2026-03-10 20:49:17,414 INFO anomaly_app Updated baseline for channel=humidity count=5700 mean=55.0890 std=6.4617
+2026-03-10 20:49:17,415 INFO anomaly_app Updated baseline for channel=pressure count=5700 mean=1012.8569 std=4.0285
+2026-03-10 20:49:17,415 INFO anomaly_app Updated baseline for channel=wind_speed count=5700 mean=9.9432 std=3.1884
+2026-03-10 20:49:17,415 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:49:17,415 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:49:17,420 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:49:17,559 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:49:17,563 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:49:17,563 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T204916.csv
+2026-03-10 20:49:17,600 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204916.csv
+2026-03-10 20:49:17,654 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:49:17,686 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:49:17,715 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T204916_summary.json
+2026-03-10 20:49:17,716 INFO anomaly_app Done processing raw/sensors_20260310T204916.csv: 5/100 anomalies flagged
+2026-03-10 20:50:17,683 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:50:17,684 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T205016.csv
+2026-03-10 20:50:17,685 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T205016.csv
+2026-03-10 20:50:17,737 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T205016.csv
+2026-03-10 20:50:17,808 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:50:17,809 INFO anomaly_app Updated baseline for channel=temperature count=5800 mean=21.9847 std=1.8770
+2026-03-10 20:50:17,810 INFO anomaly_app Updated baseline for channel=humidity count=5800 mean=55.0824 std=6.4565
+2026-03-10 20:50:17,810 INFO anomaly_app Updated baseline for channel=pressure count=5800 mean=1012.8617 std=4.0232
+2026-03-10 20:50:17,811 INFO anomaly_app Updated baseline for channel=wind_speed count=5800 mean=9.9477 std=3.1851
+2026-03-10 20:50:17,811 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:50:17,811 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:50:17,815 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:50:17,955 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:50:17,958 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:50:17,958 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T205016.csv
+2026-03-10 20:50:17,988 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T205016.csv
+2026-03-10 20:50:18,034 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:50:18,070 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:50:18,102 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T205016_summary.json
+2026-03-10 20:50:18,102 INFO anomaly_app Done processing raw/sensors_20260310T205016.csv: 5/100 anomalies flagged
+2026-03-10 20:51:18,219 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:51:18,220 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T205116.csv
+2026-03-10 20:51:18,221 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T205116.csv
+2026-03-10 20:51:18,268 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T205116.csv
+2026-03-10 20:51:18,319 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:51:18,320 INFO anomaly_app Updated baseline for channel=temperature count=5900 mean=21.9838 std=1.8706
+2026-03-10 20:51:18,320 INFO anomaly_app Updated baseline for channel=humidity count=5900 mean=55.0776 std=6.4436
+2026-03-10 20:51:18,321 INFO anomaly_app Updated baseline for channel=pressure count=5900 mean=1012.8779 std=4.0247
+2026-03-10 20:51:18,321 INFO anomaly_app Updated baseline for channel=wind_speed count=5900 mean=9.9401 std=3.1943
+2026-03-10 20:51:18,321 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:51:18,321 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:51:18,326 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:51:18,465 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:51:18,468 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:51:18,468 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T205116.csv
+2026-03-10 20:51:18,500 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T205116.csv
+2026-03-10 20:51:18,538 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:51:18,580 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:51:18,605 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T205116_summary.json
+2026-03-10 20:51:18,606 INFO anomaly_app Done processing raw/sensors_20260310T205116.csv: 6/100 anomalies flagged
+2026-03-10 20:52:18,764 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:52:18,765 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T205217.csv
+2026-03-10 20:52:18,766 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T205217.csv
+2026-03-10 20:52:18,811 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T205217.csv
+2026-03-10 20:52:18,867 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:52:18,868 INFO anomaly_app Updated baseline for channel=temperature count=6000 mean=21.9854 std=1.8735
+2026-03-10 20:52:18,869 INFO anomaly_app Updated baseline for channel=humidity count=6000 mean=55.0739 std=6.4571
+2026-03-10 20:52:18,869 INFO anomaly_app Updated baseline for channel=pressure count=6000 mean=1012.8767 std=4.0098
+2026-03-10 20:52:18,870 INFO anomaly_app Updated baseline for channel=wind_speed count=6000 mean=9.9458 std=3.1941
+2026-03-10 20:52:18,870 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:52:18,870 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:52:18,874 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:52:19,018 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:52:19,022 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:52:19,022 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T205217.csv
+2026-03-10 20:52:19,054 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T205217.csv
+2026-03-10 20:52:19,086 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:52:19,145 INFO anomaly_app Synced log file to s3://ds5220-anomaly-liam-2026/logs/app.log
+2026-03-10 20:52:19,203 INFO anomaly_app Wrote summary file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T205217_summary.json
+2026-03-10 20:52:19,203 INFO anomaly_app Done processing raw/sensors_20260310T205217.csv: 6/100 anomalies flagged
+2026-03-10 20:53:18,505 INFO anomaly_app Received SNS message type=Notification
+2026-03-10 20:53:18,505 INFO anomaly_app Received new raw CSV file: raw/sensors_20260310T205317.csv
+2026-03-10 20:53:18,507 INFO anomaly_app Processing file: s3://ds5220-anomaly-liam-2026/raw/sensors_20260310T205317.csv
+2026-03-10 20:53:18,558 INFO anomaly_app Loaded 100 rows from raw/sensors_20260310T205317.csv
+2026-03-10 20:53:18,656 INFO anomaly_app Loaded baseline from s3://ds5220-anomaly-liam-2026/state/baseline.json
+2026-03-10 20:53:18,657 INFO anomaly_app Updated baseline for channel=temperature count=6100 mean=21.9850 std=1.8704
+2026-03-10 20:53:18,658 INFO anomaly_app Updated baseline for channel=humidity count=6100 mean=55.0609 std=6.4601
+2026-03-10 20:53:18,658 INFO anomaly_app Updated baseline for channel=pressure count=6100 mean=1012.8685 std=4.0314
+2026-03-10 20:53:18,659 INFO anomaly_app Updated baseline for channel=wind_speed count=6100 mean=9.9510 std=3.1871
+2026-03-10 20:53:18,659 INFO anomaly_app Baseline updated for available numeric channels
+2026-03-10 20:53:18,659 INFO anomaly_app Starting anomaly detection using method=both
+2026-03-10 20:53:18,664 INFO anomaly_app Running IsolationForest on 100 rows across 4 numeric columns
+2026-03-10 20:53:18,803 INFO anomaly_app IsolationForest scoring complete
+2026-03-10 20:53:18,807 INFO anomaly_app Anomaly detection complete
+2026-03-10 20:53:18,807 INFO anomaly_app Anomaly scoring complete for raw/sensors_20260310T205317.csv
+2026-03-10 20:53:18,839 INFO anomaly_app Wrote processed file to s3://ds5220-anomaly-liam-2026/processed/sensors_20260310T205317.csv
+2026-03-10 20:53:18,881 INFO anomaly_app Saved baseline to s3://ds5220-anomaly-liam-2026/state/baseline.json
